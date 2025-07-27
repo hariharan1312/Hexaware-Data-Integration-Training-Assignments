@@ -1,12 +1,11 @@
 import pandas as pd
 
-# Load the dataset
 df = pd.read_csv("Superstore.csv")
 
 # Task 1: Preview and inspect
-print(df.head())  # Top 5 records
-print(df.shape)   # (rows, columns)
-print(df.dtypes)  # Column types
+print(df.head())  
+print(df.shape)   
+print(df.dtypes)  
 
 # Task 2: Clean column names and convert date columns
 df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('/', '_')
